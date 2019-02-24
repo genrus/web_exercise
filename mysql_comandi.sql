@@ -7,3 +7,7 @@ create table cred_utenti(
 
 insert into cred_utenti(username, password, email) values
 	("Gennaro15", "GenRus2000", "klavegesso@gmail.com");
+
+
+
+	FL45-GDGU85-PLJZB8

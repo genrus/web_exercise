@@ -1,1 +1,1 @@
-<?php echo("you successfully logged into the site<br/>"); ?>
+<?php echo("You successfully logged into the site<br/>"); ?>

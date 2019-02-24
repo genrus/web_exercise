@@ -1,5 +1,6 @@
 <?php
 	session_start();
+	$_SESSION['logged'] = false;
 	include("db_con.php");
 ?>
 
@@ -11,6 +12,10 @@
 	</head>
 
 	<body>
+		<?php
+		if(!$_SESSION['logged'])
+		{
+		echo('
 		<div id="left_div" style="float:left;">	
 			<h2>Registrazione</h2><br/>
 			<form name="form_registration" method="post" action="registration.php">
@@ -23,6 +28,9 @@
 				<button>Registrati</button>
 			</form>
 		</div>
+		');
+		}
+		?>
 		<div id="right_div" style="float:left;">
 			<h2>Log in</h2><br/>
 			<form name="form_login" method="post" action="login.php">
